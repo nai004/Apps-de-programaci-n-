@@ -1,0 +1,64 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Lenguajes_Favs.MainPage">
+
+      <StackLayout>
+
+        <Frame BorderColor="DeepPink"
+       CornerRadius="10"
+       Padding="8">
+            <StackLayout>
+                <Label Text="Mis Lenguajes Favoritos" Margin="5" Padding="5" HorizontalOptions="Center"
+           FontSize="Medium"
+           FontAttributes="Bold" />
+                <BoxView Color="HotPink"
+             HeightRequest="2"
+             HorizontalOptions="Fill" />
+                <Label Text="Uso de Grid Layout, Label, Frame, Button, Image, Link, Browser, con las manipulaciones de las propiedades y atributos" FontSize="16" HorizontalTextAlignment="Center"/>
+            </StackLayout>
+        </Frame>
+
+        <ScrollView>
+            
+            <StackLayout>
+
+                <Grid BackgroundColor="#e6e6e6" Margin="5" Padding="5">
+
+            <Grid RowSpacing="10" ColumnSpacing="10">
+
+                <Grid.RowDefinitions   >
+
+                    <RowDefinition Height="*" />
+
+                    <RowDefinition Height="*" />
+                    <RowDefinition Height="*" />
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                    <ColumnDefinition  Width="*" />
+                    
+                </Grid.ColumnDefinitions>
+
+                        <ImageButton Source="ANGULAR.png" CornerRadius="50" BorderColor="Bisque" BorderWidth="5" Grid.Row="0" Grid.Column="0" x:Name="ir_ANGULAR" Clicked="ir_ANGULAR_Clicked"/>
+                        <ImageButton Source="BOOTSTRAP.png" CornerRadius="50" BorderColor="Bisque" BorderWidth="5"  Grid.Row="0" Grid.Column="1" x:Name="ir_BOOTSTRAP" Clicked="ir_BOOTSTRAP_Clicked"/>
+                        <ImageButton Source="cmasmas.png" CornerRadius="50" BorderColor="Bisque" BorderWidth="5" Grid.Row="1" Grid.Column="0" x:Name="ir_cmasmas" Clicked="ir_cmasmas_Clicked"/>
+                        <ImageButton Source="cshard.png" CornerRadius="50" BorderColor="Bisque" BorderWidth="5" Grid.Row="1" Grid.Column="1" x:Name="ir_cshard" Clicked="ir_cshard_Clicked"/>
+                        <ImageButton Source="CSS3.png" CornerRadius="50" BorderColor="Bisque" BorderWidth="5" Grid.Row="2" Grid.Column="0" x:Name="ir_CSS3" Clicked="ir_CSS3_Clicked"/>
+                        <ImageButton Source="GITGUB.png" CornerRadius="50" BorderColor="Bisque" BorderWidth="5" Grid.Row="2" Grid.Column="1" x:Name="ir_GITGUB" Clicked="ir_GITGUB_Clicked"/> 
+
+
+
+
+                    </Grid>
+        </Grid>
+                
+            </StackLayout>
+
+        </ScrollView>
+
+
+        
+    </StackLayout> 
+ 
